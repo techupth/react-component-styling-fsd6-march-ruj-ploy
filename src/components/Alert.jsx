@@ -1,3 +1,17 @@
 // Start coding here
 
-function Alert() {}
+function Alert(props) {
+  return (
+    <div
+      style={{
+        background: props.backgroundColor,
+      }}
+      className="alert-box"
+    >
+      <img src={props.icon} alt={props.title} />
+      {props.title}
+    </div>
+  );
+}
+
+export default Alert;
